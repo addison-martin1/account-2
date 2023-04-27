@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-12-27"
+  years: 2021, 2023
+lastupdated: "2022-04-27"
 
 keywords: troubleshoot MFA, multifactor authentication, verification method, authentication factor
 
@@ -27,7 +27,7 @@ When I try to log in with an authentication factor, the following error message 
 
 > Error: Incorrect validation code.
 
-One or more of the authentication factors that you use are inaccessible. For example, if one of your authentication factors sends you a one-time passcode by way of SMS, but you changed your phone number, then you need to reset your MFA factors.
+One or more of the authentication factors that you use are inaccessible. For example, if one of your authentication factors sends you a one-time passcode by using SMS, but you changed your phone number, then you need to reset your MFA factors.
 {: tsCauses}
 
 1. Go to the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page.
@@ -38,6 +38,8 @@ One or more of the authentication factors that you use are inaccessible. For exa
 4. Take note of the Authentication setting for each account.
    1. If the account uses MFA for **IBMid users**, work with the [IBMid help desk](https://www.ibm.com/ibmid/myibm/help/us/helpdesk.html){: external} to reset your authentication factors.
    1. If the account uses MFA for **All users**, you can reset your authentication factors on the Verification methods and authentication factors page.
+      1. Click the checkbox next to the MFA method that you want to reset and click Remove.
+      1. Set up your new MFA method the next time that you login.
 
 
 For more information, see [Managing verification methods and MFA factors](/docs/account?topic=account-verification-authentication).
